@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue匯率計算機</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div id="app">
+            <input type="number" class="twd" v-model="twd">台幣
+            <ul>
+                <li>美金 {{twd/28.3820}}ＵＳＤ</li>
+                <li>日幣 {{twd/0.2574}}ＪＰＹ</li>
+                <li>人民幣 {{twd/4.3239}}ＣＮＹ</li>
+                <li>歐元 {{twd/33.5880}}ＥＵＲ</li>
+                <li>港幣 {{twd/3.6292}}ＨＫＤ</li>
+                <li>澳幣 {{twd/21.6690}}ＡＵＤ</li>
+            </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
